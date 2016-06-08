@@ -24,5 +24,15 @@ namespace safeEncoder
         {
             InitializeComponent();
         }
+
+        private void login(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void getFocus(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
