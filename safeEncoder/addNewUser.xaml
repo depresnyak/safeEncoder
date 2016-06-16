@@ -1,0 +1,23 @@
+﻿<Window x:Class="safeEncoder.addNewUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:safeEncoder"
+        mc:Ignorable="d"
+        Title="Add User" Height="300" Width="300">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="88" Margin="10,20,0,0" VerticalAlignment="Top" Width="99">
+            <Label x:Name="label" Content="Nickname:"/>
+            <Label x:Name="label1" Content="Password:"/>
+            <Label x:Name="label2" Content="Password again:"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="88" Margin="114,20,0,0" VerticalAlignment="Top" Width="153">
+            <TextBox x:Name="login" Height="23" TextWrapping="Wrap"/>
+            <PasswordBox x:Name="passwordBox" Height="23"/>
+            <PasswordBox x:Name="passwordBox1" Height="23" PasswordChanged="checkMutchPassword" ForceCursor="True"/>
+        </StackPanel>
+        <Button x:Name="addNewUserBtn" Content="Create" HorizontalAlignment="Left" Margin="87,113,0,0" VerticalAlignment="Top" Width="75" Click="addNewUserBtnFunk"/>
+
+    </Grid>
+</Window>

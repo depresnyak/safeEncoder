@@ -34,5 +34,12 @@ namespace safeEncoder
         {
 
         }
+
+        private void openAddNewUserWindow(object sender, MouseButtonEventArgs e)
+        {
+            addNewUser window = new addNewUser();
+            window.Show();
+        }
+        
     }
 }
